@@ -1,6 +1,31 @@
+*{
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.images{
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  font-size: 16px;
+}
+
+.wrapper{
+  width: 90%;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
 button {
   background-color: black;
   color: white;
+font-weight: ;
+gap: 10px;
+padding: 10px 19px;
   border-radius: 30px;
 }
 p {
@@ -9,6 +34,27 @@ p {
 
 .images{
     display: flex;
-    flex-direction: column;
-
+flex-wrap: wrap;
+gap: 0.5rem;
+margin-top: 1rem;
 }
+h1{
+color: black;
+text-align: center;
+background-color: white;
+}
+.row{
+text-align: center;
+}
+/* Sets each of the 8 divs to take up 1/4th of the row width */
+.images > div {
+  width: calc(25% - 0.75rem);
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
